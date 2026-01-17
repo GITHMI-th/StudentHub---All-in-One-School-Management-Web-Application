@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Study Resources</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">StudentHub</a>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="timetable.html"><i class="fas fa-calendar-alt"></i> Timetable</a>
+                <a href="resources.html" class="active"><i class="fas fa-book"></i> Resources</a>
+                <a href="homework.html"><i class="fas fa-tasks"></i> Homework</a>
+                <a href="events.html"><i class="fas fa-calendar-day"></i> Events</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <div class="page-header">
+            <h1><i class="fas fa-book"></i> Study Resources</h1>
+            <p>Access textbooks, notes, and learning materials for all subjects</p>
+        </div>
+        
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="resourceSearch" placeholder="Search for resources by subject or topic...">
+            <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <!-- Subject Filters -->
+        <div class="subject-filters">
+            <button class="filter-btn active" data-filter="all">All Subjects</button>
+            <button class="filter-btn" data-filter="math">Mathematics</button>
+            <button class="filter-btn" data-filter="science">Science</button>
+            <button class="filter-btn" data-filter="english">English</button>
+            <button class="filter-btn" data-filter="history">History</button>
+            <button class="filter-btn" data-filter="art">Art & Music</button>
+        </div>
+        
+        <!-- Resources Grid -->
+        <div class="resources-grid">
+            <!-- Resource cards will be populated by JavaScript -->
+        </div>
+        
+        <!-- Upload Section -->
+        <div class="upload-section">
+            <h2><i class="fas fa-cloud-upload-alt"></i> Share Your Resources</h2>
+            <p>Have helpful notes or materials? Share them with your classmates!</p>
+            <form id="uploadForm">
+                <div class="form-group">
+                    <label for="resourceTitle">Resource Title:</label>
+                    <input type="text" id="resourceTitle" placeholder="e.g., Calculus Formulas" required>
+                </div>
+                <div class="form-group">
+                    <label for="resourceSubject">Subject:</label>
+                    <select id="resourceSubject" required>
+                        <option value="math">Mathematics</option>
+                        <option value="science">Science</option>
+                        <option value="english">English</option>
+                        <option value="history">History</option>
+                        <option value="art">Art & Music</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="resourceType">Type:</label>
+                    <select id="resourceType" required>
+                        <option value="notes">Notes</option>
+                        <option value="textbook">Textbook</option>
+                        <option value="video">Video</option>
+                        <option value="practice">Practice Problems</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="resourceLink">Link/URL:</label>
+                    <input type="url" id="resourceLink" placeholder="https://example.com/resource" required>
+                </div>
+                <div class="form-group">
+                    <label for="resourceDescription">Description:</label>
+                    <textarea id="resourceDescription" rows="3" placeholder="Brief description of the resource..."></textarea>
+                </div>
+                <button type="submit" class="btn">Share Resource</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>StudentHub</h3>
+                <p>Made by students, for students. Simplifying school life since 2023.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="timetable.html">Timetable</a>
+                <a href="resources.html">Resources</a>
+                <a href="homework.html">Homework</a>
+                <a href="events.html">Events</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> contact@studenthub.com</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 StudentHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

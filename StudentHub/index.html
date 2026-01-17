@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">StudentHub</a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+                <a href="timetable.html"><i class="fas fa-calendar-alt"></i> Timetable</a>
+                <a href="resources.html"><i class="fas fa-book"></i> Resources</a>
+                <a href="homework.html"><i class="fas fa-tasks"></i> Homework</a>
+                <a href="events.html"><i class="fas fa-calendar-day"></i> Events</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to StudentHub</h1>
+            <p>Your personal assistant for managing school life efficiently</p>
+            <a href="#features" class="btn">Explore Features</a>
+        </div>
+        <div class="hero-image">
+            <!-- ALTERNATIVE 1: Try this simpler Unsplash URL -->
+            <img src="https://images.unsplash.com/photo-1495465798138-718f86d1a4bc?w=1000&auto=format&fit=crop" alt="Students studying">
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>How StudentHub Helps You</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h3>Class Timetable</h3>
+                <p>Keep track of your daily schedule and never miss a class again.</p>
+                <a href="timetable.html" class="feature-link">View Timetable →</a>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3>Study Resources</h3>
+                <p>Access textbooks, notes, and other learning materials in one place.</p>
+                <a href="resources.html" class="feature-link">Browse Resources →</a>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <h3>Homework Tracker</h3>
+                <p>Manage assignments, set deadlines, and track your progress.</p>
+                <a href="homework.html" class="feature-link">Track Homework →</a>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-calendar-day"></i>
+                </div>
+                <h3>School Events</h3>
+                <p>Stay updated with upcoming exams, holidays, and school activities.</p>
+                <a href="events.html" class="feature-link">View Events →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="stats">
+        <div class="stat-item">
+            <h3>24/7</h3>
+            <p>Access Anytime</p>
+        </div>
+        <div class="stat-item">
+            <h3>All Subjects</h3>
+            <p>Comprehensive Coverage</p>
+        </div>
+        <div class="stat-item">
+            <h3>100% Free</h3>
+            <p>No Cost for Students</p>
+        </div>
+        <div class="stat-item">
+            <h3>Mobile Friendly</h3>
+            <p>Study On The Go</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>StudentHub</h3>
+                <p>Made by students, for students. Simplifying school life since 2023.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="timetable.html">Timetable</a>
+                <a href="resources.html">Resources</a>
+                <a href="homework.html">Homework</a>
+                <a href="events.html">Events</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> contact@studenthub.com</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 StudentHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
